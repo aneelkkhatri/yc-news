@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html style="font-size: 15px; font-weight: 400; line-height: 20px; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+		div.username div {
+			display: inline-block;
+			vertical-align: top;
+		}
+		a {
+			text-decoration: none;
+		}
+		div.reactions {
+			color: rgb(83, 100, 113);
+			fill: rgb(83, 100, 113);
+		}
+
+		div.reactions span > span {
+			line-height: 16px;
+			font-size: 13px;
+		}
+
+		div.reactions span > span > span {
+			padding-left: 12px;
+			padding-right: 12px;
+		}
+		div.reactions svg {
+			fill: inherit;
+			height: 18.75px;
+			width: 18.75px;
+			vertical-align: bottom;
+		}
+		div.reactions > div {
+			max-width: 425px;
+			column-gap:  8px;
+			margin-top: 12px;
+			-webkit-box-pack: justify;
+			justify-content: space-between;
+			flex-direction:  row;
+			display: flex;
+		}
+		div.reactions > div > div {
+			-webkit-box-pack:  start;
+			justify-content: flex-start;
+			display: flex;
+		}
+		
+		div.reactions > div > div  > div {
+			display: inline-flex  ;
+			vertical-align: bottom;
+		}
+		#template {
+			display: none;
+		}
+		#container {
+			margin: auto;
+		}
+		#container > .item, #header > div > div {
+ 			border-left: 1px solid rgb(239, 243, 244);
+ 			border-right: 1px solid rgb(239, 243, 244);
+ 			cursor:  pointer;
+		}
+		#container > .item:nth-child(1) {
+ 			border-top: 1px solid rgb(239, 243, 244);
+		}
+		/*#container > .item:hover {
+			background: gray;
+		}
+		#container > .item {
+			background: red;
+		}*/
+		.content {
+			padding-bottom: 12px;
+		}
+		div.reactions .data-comment-btn:hover, div.reactions .data-comment-btn svg:hover {
+			fill: #00aaff;
+			color: #00aaff;;
+		}
+
+		div.reactions .data-like-btn:hover, div.reactions .data-like-btn svg:hover {
+			fill: #ff44aa;
+			color: #ff44aa;;
+		}
+	</style>
+</head>
+<body>
+	<div id="template" class="item" style="width: 598px; padding-top:12px; background: #fff;" onmouseover="this.style.background='rgba(0,0,0,0.03)';" onmouseout="this.style.background='rgba(0,0,0,0.0)';">
+		<div style="width: 566px; min-height:86px; margin: auto; ">
+			<div>
+				<div class="data-image-thumb" style="width:48px; height: 48px; margin-right: 12px; border-radius:24px; display: inline-block; vertical-align: top; background-image: url(https://pbs.twimg.com/profile_images/1442634650703237120/mXIcYtIs_x96.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;"></div>
+				<div style="display: inline-block; vertical-align: top; width: 502px;">
+					<div class="username">
+						<div style="margin-bottom: 2px; height: 20px">
+							<a href="/elonmusk" role="link" style="outline-style: none;"><div><div><div dir="auto" style="color: rgb(15, 20, 25); font-weight: 700;"><span><span class="data-name">Elon Musk</span></span></div><div dir="auto">
+								<!-- <svg viewBox="0 0 24 24" aria-label="Verified account" style="fill: rgb(29, 155, 240); width: 20px; height: 20px; display: inline-block;"><g><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"></path></g></svg> -->
+								<!-- <img src="https://news.ycombinator.com/y18.gif" style="width: 20px; height: 20px; "> -->
+							</div></div><div style="margin-left: 4px;"><div dir="ltr"><span class="data-username" style="color: rgb(83, 100, 113)">@elonmusk</span></div>
+							</a>
+						</div>
+						<div dir="auto" aria-hidden="true">
+							<span style="color: rgb(83, 100, 113)">·</span>
+						</div>
+						<a href="/elonmusk/status/1472065241420898306" style="color: rgb(83, 100, 113)" dir="auto" aria-label="2 hours ago" role="link"><time datetime="2021-12-18T04:44:37.000Z">2h</time></a>
+					</div>
+					<div>									
+						<svg viewBox="0 0 24 24" aria-hidden="true"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div>
+					<span class="data-text">Tesla FSD 10.8 plus holiday fun software release probably Tuesday</span>
+				</div>
+				<div style="height: 20px;overflow: hidden;opacity: 0.3;max-width: 100%; padding-top: 5px;">
+					<span class="data-url"></span>
+				</div>
+				<div class="image"></div>
+					<div class="reactions">
+						<div>
+							<div>
+								<div class="data-comment-btn">
+									<div>
+										<svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M14.046 2.242l-4.148-.01h-.002c-4.374 0-7.8 3.427-7.8 7.802 0 4.098 3.186 7.206 7.465 7.37v3.828c0 .108.044.286.12.403.142.225.384.347.632.347.138 0 .277-.038.402-.118.264-.168 6.473-4.14 8.088-5.506 1.902-1.61 3.04-3.97 3.043-6.312v-.017c-.006-4.367-3.43-7.787-7.8-7.788zm3.787 12.972c-1.134.96-4.862 3.405-6.772 4.643V16.67c0-.414-.335-.75-.75-.75h-.396c-3.66 0-6.318-2.476-6.318-5.886 0-3.534 2.768-6.302 6.3-6.302l4.147.01h.002c3.532 0 6.3 2.766 6.302 6.296-.003 1.91-.942 3.844-2.514 5.176z"></path></g></svg>
+									</div>
+									<div>
+										<span style="transform: translate3d(0px, 0px, 0px); transition-property: transform; transition-duration: 0.3s;"><span><span class="data-comments">2.5K</span></span></span></div>
+									</div>
+								</div>
+								<div>
+									<div>
+										<svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M23.77 15.67c-.292-.293-.767-.293-1.06 0l-2.22 2.22V7.65c0-2.068-1.683-3.75-3.75-3.75h-5.85c-.414 0-.75.336-.75.75s.336.75.75.75h5.85c1.24 0 2.25 1.01 2.25 2.25v10.24l-2.22-2.22c-.293-.293-.768-.293-1.06 0s-.294.768 0 1.06l3.5 3.5c.145.147.337.22.53.22s.383-.072.53-.22l3.5-3.5c.294-.292.294-.767 0-1.06zm-10.66 3.28H7.26c-1.24 0-2.25-1.01-2.25-2.25V6.46l2.22 2.22c.148.147.34.22.532.22s.384-.073.53-.22c.293-.293.293-.768 0-1.06l-3.5-3.5c-.293-.294-.768-.294-1.06 0l-3.5 3.5c-.294.292-.294.767 0 1.06s.767.293 1.06 0l2.22-2.22V16.7c0 2.068 1.683 3.75 3.75 3.75h5.85c.414 0 .75-.336.75-.75s-.337-.75-.75-.75z"></path></g></svg>
+									</div>
+									<div>
+										<span data-testid="app-text-transition-container" style="transform: translate3d(0px, 0px, 0px); transition-property: transform; transition-duration: 0.3s;"><span><span></span></span></span>
+									</div>
+								</div>
+								<div class="data-like-btn">
+									<div>
+										<svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M12 21.638h-.014C9.403 21.59 1.95 14.856 1.95 8.478c0-3.064 2.525-5.754 5.403-5.754 2.29 0 3.83 1.58 4.646 2.73.814-1.148 2.354-2.73 4.645-2.73 2.88 0 5.404 2.69 5.404 5.755 0 6.376-7.454 13.11-10.037 13.157H12zM7.354 4.225c-2.08 0-3.903 1.988-3.903 4.255 0 5.74 7.034 11.596 8.55 11.658 1.518-.062 8.55-5.917 8.55-11.658 0-2.267-1.823-4.255-3.903-4.255-2.528 0-3.94 2.936-3.952 2.965-.23.562-1.156.562-1.387 0-.014-.03-1.425-2.965-3.954-2.965z"></path></g></svg>
+									</div>
+									<div>
+										<span style="transform: translate3d(0px, 0px, 0px); transition-property: transform; transition-duration: 0.3s;"><span><span class="data-likes">27.8K</span></span></span>
+									</div>
+								</div>
+								<div dir="ltr">
+									<div>
+										<svg viewBox="0 0 24 24" aria-hidden="true"><g><path d="M17.53 7.47l-5-5c-.293-.293-.768-.293-1.06 0l-5 5c-.294.293-.294.768 0 1.06s.767.294 1.06 0l3.72-3.72V15c0 .414.336.75.75.75s.75-.336.75-.75V4.81l3.72 3.72c.146.147.338.22.53.22s.384-.072.53-.22c.293-.293.293-.767 0-1.06z"></path><path d="M19.708 21.944H4.292C3.028 21.944 2 20.916 2 19.652V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 .437.355.792.792.792h15.416c.437 0 .792-.355.792-.792V14c0-.414.336-.75.75-.75s.75.336.75.75v5.652c0 1.264-1.028 2.292-2.292 2.292z"></path></g></svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="header" style="width: 100%; background: #fff; position: fixed; top:0; z-index: 9999">
+		<div style="width: 598px; margin: auto">
+			<div style="width: 598px;">
+			<div style="background: rgba(0, 0, 0, 0); font-size: 24px; line-height: 24px; font-weight: 700; font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif; ">
+				<div style="padding: 16px;">Home</div>
+			</div></div>
+		</div>
+	</div>
+	<div id="container" style="width: 598px; margin-top: 56px">
+	</div>
+	<script type="text/javascript">
+		let container = document.getElementById('container')
+		let template = document.getElementById('template')
+		async function main() {
+			let response = await fetch("https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty");
+			let ids = await response.json();
+			async function fetchStory(storyId) {
+				let resp = await fetch('https://hacker-news.firebaseio.com/v0/item/'+storyId+'.json?print=pretty');
+				return await resp.json();
+			}
+			async function getRandomImageThumb(seed) {
+				let resp1 = await fetch("https://randomuser.me/api/?seed="+seed);
+				let randomUser = await resp1.json();
+				return randomUser.results[0].picture.thumbnail;
+				// return "https://randomuser.me/api/portraits/thumb/men/13.jpg";
+			}
+			async function createAndAddFor(storyId) {
+				let story = await fetchStory(storyId);
+				let imageThumb = await getRandomImageThumb(story.by);
+				console.log(story);
+				let el = template.cloneNode(true);
+				el.removeAttribute("id");
+				el.querySelector('.data-username').textContent='@'+story.by;
+				el.querySelector('.data-name').textContent=story.by;
+				el.querySelector('.data-text').textContent=story.title;
+				el.querySelector('.data-likes').textContent=story.score;
+				el.querySelector('.data-comments').textContent=story.kids.length;
+				el.querySelector('.data-url').textContent = story.url;
+				el.querySelector('.data-comment-btn').onclick = (e) => {
+					window.open("https://news.ycombinator.com/item?id="+storyId)
+				}
+				el.querySelector('.data-image-thumb').style.backgroundImage = 'url("'+imageThumb+'")'
+				el.onclick = (e) => {
+					window.open(story.url)
+				};
+				container.append(el);
+			}
+
+			let offsetDone = 0;
+			async function createAndAddNext() {
+				if (window.pageYOffset+window.outerHeight > container.scrollHeight) {
+					console.log(window.pageYOffset+window.outerHeight, container.scrollHeight)
+					createAndAddFor(ids[offsetDone++]).then(() => {}).catch(console.error);
+					setTimeout(createAndAddNext, 100);
+				} else {
+					setTimeout(createAndAddNext, 500);
+				}
+			}
+			createAndAddNext();
+			// ids.slice(0,10).forEach(storyId => {
+			// 	createAndAddFor(storyId).then(() => {}).catch(console.error);
+			// });
+		}
+		main();
+	</script>
+</body>
+</html>
